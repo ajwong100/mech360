@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.26)  3 OCT 2024 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.5.26)  3 OCT 2024 14:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -657,22 +657,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.135 \newpage
-               [1] [2] (mech360_notes.aux)
+               [1]
+Underfull \hbox (badness 10000) in paragraph at lines 145--149
+
+ []
+
+[2] (mech360_notes.aux)
 Package rerunfilecheck Info: File `mech360_notes.out' has not changed.
 (rerunfilecheck)             Checksum: DA2D5F024CCA35B80590A004360AB6A4;309.
  ) 
 Here is how much of TeX's memory you used:
- 33004 strings out of 476410
- 773630 string characters out of 5789113
- 1853845 words of memory out of 5000000
- 52814 multiletter control sequences out of 15000+600000
- 518559 words of font info for 55 fonts, out of 8000000 for 9000
+ 33008 strings out of 476410
+ 773663 string characters out of 5789113
+ 1859845 words of memory out of 5000000
+ 52815 multiletter control sequences out of 15000+600000
+ 518905 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,103p,782b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on mech360_notes.pdf (3 pages, 60286 bytes).
+ 99i,16n,103p,782b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Owner/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on mech360_notes.pdf (3 pages, 115134 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
  29 words of extra memory for PDF output out of 10000 (max. 10000000)
 
