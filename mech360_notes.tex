@@ -134,8 +134,35 @@
 
 \newpage
 
-
 \section{Pure Bending}
 \subsection{Unsymmetric Bending Analysis}
-Our notes here!
+Any given section possess \emph{principal centroidal axes} even if it is unsymmetric.
+Principal centroidal axes can be determined 
+\begin{enumerate}
+  \item analytically
+  \item or using Mohr's circle.
+\end{enumerate}
+If $\bb{M}$ is along the principal centroidal axis, the N.A. will be along the axis of $\bb{M}$,
+then the equations for symmetric members can be used to compute the stresses.
+The principal of superposition is used to determine stresses in general for unsymmetric cases.
+\\
+
+Given some a couple momment $\bb{M}$, we have
+\begin{align*}
+  M_z = M\cos\theta,~~ M_y = M\sin\theta,
+\end{align*}
+then using superposition,
+\begin{align*}
+  \sigma_x = \frac{-M_z y}{I_z} + \frac{+M_y z}{I_y}.
+\end{align*}
+Points along the N.A. have no stress, thus let $\sigma_x = 0$, and using
+$M_z = M\cos\theta,~~ M_y = M\sin\theta$, we get
+\begin{align*}
+  y = \underbrace{\left(\frac{I_z}{I_y}\tan\theta\right)}_a z,
+\end{align*}
+representing a line $y(z)$ with slope $a$.
+Letting $\phi$ be the angle between the N.A. and the z-axis gives
+\begin{align*}
+  \tan\phi = \frac{I_z}{I_y}\tan\theta.
+\end{align*}
 \end{document}
