@@ -1,0 +1,141 @@
+\documentclass{article}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd, fancyhdr, color, comment, graphicx, environ, pgfplots}
+\usepackage{hyperref} \hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\pgfplotsset{compat=1.18}
+%Drawing
+\usepackage{tikz}
+
+%3D
+\usepackage{tikz-3dplot}
+
+%Tikz Library
+\usetikzlibrary{angles, quotes, intersections}
+
+%Styles
+\tikzset{axis/.style={thick,-latex}}
+\tikzset{vec/.style={thick,blue}}
+\tikzset{univec/.style={thick,red,-latex}}
+
+%Notation
+\usepackage{physics}
+\usepackage{bm}
+%%PAGE SETUP%%
+\usepackage[top=3cm, bottom=4cm, left=3cm, right=3cm]{geometry}
+\pagestyle{fancy}
+\fancyhead{} % clear all header fields
+\fancyhead[LO]{AJ Wong, Eugene Lee}
+\fancyhead[RO]{\leftmark} %\leftmark is a chapter title and %\rightmark is a section title
+\setlength{\parindent}{0pt} %Makes all indentation values 0 to avoid default indent
+%%\parskip=10pt
+
+%%Equation Numbers
+\numberwithin{equation}{subsection}
+
+%%COMMANDS%%
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\PP}{\mathbb P}
+\newcommand{\infixiff}{\text{ iff }}
+\newcommand{\nobracket}{}
+\newcommand{\tmmathbf}[1]{\ensuremath{\boldsymbol{#1}}}
+\newcommand{\tmop}[1]{\ensuremath{\operatorname{#1}}}
+\newcommand{\tmtextbf}[1]{\text{{\bfseries{#1}}}}
+\newcommand{\tmtextit}[1]{\text{{\itshape{#1}}}}
+\newcommand{\ans}[1]{\color{blue}\boxed{#1}}
+\newcommand{\further}[1]{\textcolor{gray}{#1}}
+\newcommand{\lam}{\lambda}
+
+%%MATRICES%%
+%%2x2
+\newcommand{\cv}[2]{\begin{bmatrix}
+  #1\\
+  #2\\
+\end{bmatrix}}
+\newcommand{\m}[4]{\begin{bmatrix}
+  #1 & #2\\
+  #3 &#4\\
+\end{bmatrix}}
+\newcommand{\deter}[4]{\begin{vmatrix}
+  #1 & #2\\
+  #3 &#4\\
+\end{vmatrix}}
+
+%%3x3
+\newcommand{\mm}[9]{\begin{bmatrix}
+  #1 & #2 & #3\\
+  #4 & #5 &#6\\
+  #7 & #8 & #9\\
+\end{bmatrix}}
+\newcommand{\deterr}[9]{\begin{vmatrix}
+  #1 & #2 & #3\\
+  #4 & #5 &#6\\
+  #7 & #8 & #9\\
+\end{vmatrix}}
+\newcommand{\cvv}[3]{\begin{bmatrix}
+  #1\\
+  #2\\
+  #3\\
+\end{bmatrix}}
+\newcommand{\cvvv}[4]{\begin{bmatrix}
+  #1\\
+  #2\\
+  #3\\
+  #4\\
+\end{bmatrix}}
+
+
+%%vector
+\newcommand{\vv}[1]{\left\langle #1 \right\rangle}
+\newcommand{\bb}[1]{\mathbf{#1}}
+
+%%partial
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+
+%Equation Name
+\newcommand{\eqname}[1]{\tag*{#1}}% Tag equation with name
+
+
+\begin{document}
+
+\begin{titlepage}
+    \title{}
+    \author{}
+    \date{}
+    \begin{center}
+        \vspace*{3cm}
+            
+        \Huge
+        \textbf{MECH 360 Notes}
+            
+        \vspace{1cm}
+ 
+        \vspace{1.5cm}
+        \Large
+        \textbf{By AJ Wong and Eugene Lee} \\                    % <-- author
+   
+        \vfill
+   
+        \vspace{1cm}
+
+        \Large
+        \today %%Date
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+
+\section{Pure Bending}
+\subsection{Unsymmetric Bending Analysis}
+Our notes here!
+\end{document}
