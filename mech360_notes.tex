@@ -137,6 +137,21 @@
 
 \newpage
 
+\section{Transformation of Stress}
+Given the 3-D stress tensor
+\begin{align}
+  \tensor{\sigma} = \mm{\sigma_{xx}}{\sigma_{xy}}{\sigma_{xz}}{\sigma_{yy}}{\sigma_{yx}}{\sigma_{yz}}{\sigma_{zx}}{\sigma_{zy}}{\sigma_{zz}},
+\end{align}
+the principal stress tensor is given by
+\begin{align}
+  \tensor{\sigma_p} = \mm{\sigma_1}{0}{0}{0}{\sigma_2}{0}{0}{0}{\sigma_3}.
+\end{align}
+\textbf{Invarient Properties:}
+\begin{itemize}
+  \item trace$(\tensor{\sigma})$ = trace$(\tensor{\sigma_p})$
+  \item det$(\tensor{\sigma})$ = det$(\tensor{\sigma_p})$
+\end{itemize}
+
 \section{Pure Bending}
 \subsection{Unsymmetric Bending Analysis}
 \textbf{Main Ideas:}
@@ -195,7 +210,7 @@ representing a line $y(z)$ with slope $a$.
 Letting $\phi$ be the angle between the N.A. and the z-axis gives
 \begin{align*}
   \tan\phi = \frac{I_z}{I_y}\tan\theta.
-\end{align*}
+\end{align*}`'
 Note, $\phi$ depends on the loading axis. Also,
 \begin{align*}
   \tan\phi = \frac{y_n}{z_n},
