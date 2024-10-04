@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1728054549.13939 "c:/Users/eleei/Downloads/mech360/mech360/mech360_notes.tex" "mech360_notes.pdf" "mech360_notes" 1728054550.49482 0
-  "c:/Users/eleei/Downloads/mech360/mech360/mech360_notes.tex" 1728054470 6272 f6f4f813e2a4be6950651a0e97f101de ""
+["pdflatex"] 1728069323.41036 "c:/Users/eleei/Downloads/mech360/mech360/mech360_notes.tex" "mech360_notes.pdf" "mech360_notes" 1728069326.08677 0
+  "c:/Users/eleei/Downloads/mech360/mech360/mech360_notes.tex" 1728069322 6274 5d8625212e2e6cf6ff61ca0d3328092a ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1728027308 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1728023079 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1728023079 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -216,10 +216,10 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1728036128 5520490 7d379628d5de7a14652a9db62d1e107c ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1728036233 3325957 6f89ffa160de68e6f1acae3b07d1de2b ""
   "c:/texlive/2024/texmf.cnf" 1728036111 713 e69b156964470283e0530f5060668171 ""
-  "mech360_notes.aux" 1728054550 530 5aeea04f6edcaf0a8f3812501c814eb1 "pdflatex"
-  "mech360_notes.out" 1728054550 454 96fa7f52db1e42db1c9c05bad66111c6 "pdflatex"
-  "mech360_notes.tex" 1728054470 6272 f6f4f813e2a4be6950651a0e97f101de ""
-  "mech360_notes.toc" 1728054550 245 cbdd3129fc0acef6aa31d5ffff3f3463 "pdflatex"
+  "mech360_notes.aux" 1728069325 530 5aeea04f6edcaf0a8f3812501c814eb1 "pdflatex"
+  "mech360_notes.out" 1728069325 454 96fa7f52db1e42db1c9c05bad66111c6 "pdflatex"
+  "mech360_notes.tex" 1728069322 6274 5d8625212e2e6cf6ff61ca0d3328092a ""
+  "mech360_notes.toc" 1728069325 245 cbdd3129fc0acef6aa31d5ffff3f3463 "pdflatex"
   (generated)
   "mech360_notes.aux"
   "mech360_notes.log"
