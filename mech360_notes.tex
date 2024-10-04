@@ -96,6 +96,9 @@
 \newcommand{\vv}[1]{\left\langle #1 \right\rangle}
 \newcommand{\bb}[1]{\mathbf{#1}}
 
+%tensor
+\newcommand{\tensor}[1]{\underline{\underline{#1}}}
+
 %%partial
 \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
 
@@ -136,6 +139,33 @@
 
 \section{Pure Bending}
 \subsection{Unsymmetric Bending Analysis}
+\textbf{Main Ideas:}
+\begin{enumerate}
+  \item Moment is a vector - resolving vectors
+  \item "Principal" Centroidal axes - Mohr's circle
+  \item Superposition - adding stresses
+\end{enumerate}
+This leads two showing how one unsymmetric bending problem is two symmetric bending problems.
+\\
+
+\textbf{Principal Centroidal Axes:}
+Where the product of inertia is zero. 
+\\
+
+Recall,
+\begin{align*}
+  I_{xy} = \int xy dA,
+\end{align*}
+If
+\begin{align*}
+  I_{zy} = 0, I_y \neq 0, I_z \neq 0,
+\end{align*}
+then $y$ and $z$ are the principal centroidal axes (PCA). PCA's are mutually orthogonal.
+Finding principal planes is analogous to finding principal stresses on the Mohr's circle.
+\\
+
+The area moment of inertia is a tensor too. We apply the Mohr's transformations to find PCA.
+\\
 
 Any given section possess \emph{principal centroidal axes} even if it is unsymmetric.
 Principal centroidal axes can be determined: 
@@ -154,7 +184,7 @@ Given some a couple momment $\bb{M}$, we have
 \end{align*}
 then using superposition,
 \begin{align*}
-  \sigma_x = \frac{-M_z y}{I_z} + \frac{+M_y z}{I_y}.
+  \sigma_x(y,z) = \frac{-M_z y}{I_z} + \frac{+M_y z}{I_y}.
 \end{align*}
 Points along the N.A. have no stress, thus let $\sigma_x = 0$, and using
 $M_z = M\cos\theta,~~ M_y = M\sin\theta$, we get
@@ -166,5 +196,34 @@ Letting $\phi$ be the angle between the N.A. and the z-axis gives
 \begin{align*}
   \tan\phi = \frac{I_z}{I_y}\tan\theta.
 \end{align*}
+Note, $\phi$ depends on the loading axis. Also,
+\begin{align*}
+  \tan\phi = \frac{y_n}{z_n},
+\end{align*}
+where $(y_n, z_n)$ is some point on the NA.
+\\
+
+\textbf{Solving Steps:}
+If ${\underline{M}}$ is not in the plane of symmetry, we have an unsymmetric bending problem.
+\begin{enumerate}
+  \item Find PCA - (using Mohr)
+  \item Resolve moment vector about PCA
+  \item Find/apply $\sigma = \frac{-My}{i}$ for each component
+  \item Superposition - (assuming linearly elastic material)
+\end{enumerate}
+
+\textbf{Steps solving an example:}
+\begin{enumerate}
+  \item PCA: found by inspection
+  \item Decompose moment into cartesian components
+  \item Stress due to asymmetric bending is the sum of the stress due to each moment component
+\end{enumerate}
+
+\subsection{Eccentric Loading}
+Using superposition
+\begin{align*}
+  \sigma_x(y,z) = \frac{P}{A} - \frac{M_z y}{I_z} + \frac{M_y z}{I_y}.
+\end{align*}
+
 
 \end{document}
