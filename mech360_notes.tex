@@ -174,7 +174,7 @@ Product of Inertia is a measure of body symmetry.
 
 When you talk about symmetry, we talk about planes of symmetry.
 
-If a body is symmetrical about a plane, let's say xy-plane, then $$ I_{xy} = 0$$.
+If a body is symmetrical about a plane, let's say $xy$-plane, then $$ I_{xy} = 0$$.
 
 
 Recall,
@@ -211,6 +211,9 @@ then using superposition,
 \begin{align*}
   \sigma_x(y,z) = \frac{-M_z y}{I_z} + \frac{+M_y z}{I_y}.
 \end{align*}
+Note, we are using a right-handed frame to achieve these signs.
+\\
+
 Points along the N.A. have no stress, thus let $\sigma_x = 0$, and using
 $M_z = M\cos\theta,~~ M_y = M\sin\theta$, we get
 \begin{align*}
@@ -244,13 +247,34 @@ If ${\underline{M}}$ is not in the plane of symmetry, we have an unsymmetric ben
   \item Stress due to asymmetric bending is the sum of the stress due to each moment component
 \end{enumerate}
 
+\textbf{Example 8 Steps:} For the given section, write the steps to find the bending stress and maximum bending stress.
+\begin{enumerate}
+  \item Know/compute $\tensor{I}$. If $x$-$y$ are principal axes, $I_{xy}\neq0$, which is an easy problem.
+  To find $I_{ij}$ where $i$ and $j$ represent $x,y$, or $z$, we find the centroid of each simple section, then apply the parallel axis theorem.
+  \item Draw Mohr's Circle to find principal moments of inertia and principal axes. In principal centroidal axis $\tensor{I_p} = \m{I_u}{0}{0}{I_v}$.
+  Note, $I_{uv}=0$.
+  \item Superposition: $\sigma(u,v) = -\frac{M_v u}{I_v} + \frac{M_u v}{I_u}$ on an element at $(u,v)$.
+  Since we can observe the direction of the moment and find a point $A: (u_A, v_A)$ that is farthest away from the neutral axis and causes each term in each direction to be of the same sign.
+  Then, the max bending stress will be given by $|\sigma_{\text{max}}| = \sigma(u_A, v_A)$. If unsure, you can try multiple points $(u_i, v_i)$ and take max$\{\sigma(u_i,v_i)\}$.
+\end{enumerate}
+
 \subsection{Eccentric Loading}
 Using superposition
 \begin{align*}
   \sigma_x(y,z) = \frac{P}{A} - \frac{M_z y}{I_z} + \frac{M_y z}{I_y}.
 \end{align*}
 
-
+\section{Shear Stresses in Beams and Thin-Walled Members}
+Consider the case when $M$ not constant, $V = \frac{dM}{dx} \neq 0$. This is not pure bending since
+there is a varying bending moment.
+\begin{itemize}
+  \item Shear stresses: $\tau = \frac{V}{A}$ is actually wrong
+  \item Shear Stress Formula: 
+\end{itemize}
+\textbf{What induces shear stresses?}\\
+\dots \\
+Most importantly: Always ask what is the shear plane? Visualize shear action, and
+calculate shear area.
 \subsection{Shear Flow}
 \begin{itemize}
   \item $q$ is shear flow
