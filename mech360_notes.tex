@@ -278,8 +278,63 @@ calculate shear area.
 \subsection{Shear Flow}
 \begin{itemize}
   \item $q$ is shear flow
+  \item $V$ is shear force
   \item Q is first moment of area, units $m^3$ of some partial area of cross-section (dependent on question) about centroid
 \end{itemize}
+Shear flow:
+\begin{align}
+  q = \frac{VQ}{I} \quad [N/m].
+\end{align}
+Moment of inertia for for rectangular cross-section:
+\begin{align}
+  I = \frac{bh^3}{12}.
+\end{align}
+First moment of area:
+\begin{align}
+  Q = \int y dA
+\end{align}
+Note, $Q$ changes with cut.
+\\\\
+Then,
+\begin{align}
+  Q(y) = b(h/2 - y)\bar{y}
+\end{align}
+where
+\begin{align}
+  \bar{y} = (h/2 - y)\cdot 1/2 + y, 
+\end{align}
+thus,
+\begin{align}
+  Q(y) = \frac{b}{2}\left(\frac{h}{2}-y\right)^2 + by \left(\frac{h}{2}-2\right)\quad [m^3],
+\end{align}
+which is a quadratic in $y$. $\implies q(y)$ varies quadtraticlly in $y$.
+\\\\
+*Importantly, equal and opposite shears exist at a cross-section.
+\\\\
+\textbf{Summary: Bending of thin-walled beams}
+\begin{itemize}
+  \item Shear flow is shear force per unit distance $q = \frac{VQ}{I}$
+  \item q varies along the length of a beam (due to a change in $V$) as well as
+  across the depth of cross-section (due to a change in $\sigma(y) = \frac{-My}{I}$)
+  \item The sum total of shear flow at any given cross-section is conserved
+  \item Shear force in a segment of cross-section: 
+  $F = \int q ds$
+ \item Shear flow can exhibit complex patterns in its direction and
+  magnitude as illustrated next
+ \item Most significantly shear flow can cause unwanted torsion during
+  bending
+\end{itemize}
+
+\textbf{Bending and Twisting}
+\begin{itemize}
+  \item Bending and Twisting: $\tau \neq \frac{VQ}{It}$
+  \item Only Bending (No twisting) $\tau = \frac{VQ}{It}$. *Preferred for design.
+  \item Only Twisting (No bending): $\tau \neq \frac{VQ}{It}$
+\end{itemize}
+
+\subsection{Shear Center}
+
+\newpage
 I would like to emphasize that $Q$ is for PART of the cross-sectional area. \\
 
 \begin{itemize}
@@ -297,6 +352,8 @@ I think we've just been ignoring it. \\
   \item Identify the area that you will find Q for. I think the area depends on what the nail of interest is in.
   \item 
 \end{enumerate}
+
+
 
 
 \end{document}
